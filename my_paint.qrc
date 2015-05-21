@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icons/actions-icons/application-exit.png</file>
+        <file>icons/actions-icons/clear-gray.png</file>
+        <file>icons/actions-icons/document-new.png</file>
+        <file>icons/actions-icons/document-open.png</file>
+        <file>icons/actions-icons/document-print.png</file>
+        <file>icons/actions-icons/document-properties.png</file>
+        <file>icons/actions-icons/document-save.png</file>
+        <file>icons/actions-icons/document-save-as.png</file>
+        <file>icons/actions-icons/edit-copy.png</file>
+        <file>icons/actions-icons/edit-cut.png</file>
+        <file>icons/actions-icons/edit-paste.png</file>
+        <file>icons/actions-icons/edit-redo.png</file>
+        <file>icons/actions-icons/edit-undo.png</file>
+        <file>icons/actions-icons/help-about.png</file>
+        <file>icons/actions-icons/object-rotate-left.png</file>
+        <file>icons/actions-icons/object-rotate-right.png</file>
+        <file>icons/actions-icons/window-close.png</file>
+        <file>icons/actions-icons/zoom-in.png</file>
+        <file>icons/actions-icons/zoom-out.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix2">
+        <file>icons/instruments-icons/cursor.png</file>
+        <file>icons/instruments-icons/cursor_fill.png</file>
+        <file>icons/instruments-icons/cursor_loupe.png</file>
+        <file>icons/instruments-icons/cursor_pipette.png</file>
+        <file>icons/instruments-icons/cursor_spray.png</file>
+        <file>icons/instruments-icons/curve.png</file>
+        <file>icons/instruments-icons/ellipse.png</file>
+        <file>icons/instruments-icons/fill.png</file>
+        <file>icons/instruments-icons/lastic.png</file>
+        <file>icons/instruments-icons/line.png</file>
+        <file>icons/instruments-icons/loupe.png</file>
+        <file>icons/instruments-icons/pencil.png</file>
+        <file>icons/instruments-icons/pipette.png</file>
+        <file>icons/instruments-icons/rectangle.png</file>
+        <file>icons/instruments-icons/spray.png</file>
+        <file>icons/instruments-icons/text.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix3"/>
+</RCC>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="selectionButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>select</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/cursor.png</normaloff>:/new/prefix2/icons/instruments-icons/cursor.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="eraserButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>eraser</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/lastic.png</normaloff>:/new/prefix2/icons/instruments-icons/lastic.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pencilButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>pen</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/pencil.png</normaloff>:/new/prefix2/icons/instruments-icons/pencil.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lineButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>line</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/line.png</normaloff>:/new/prefix2/icons/instruments-icons/line.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rectangleButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>rectangle</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/rectangle.png</normaloff>:/new/prefix2/icons/instruments-icons/rectangle.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circleButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>ellipse</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/ellipse.png</normaloff>:/new/prefix2/icons/instruments-icons/ellipse.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="textButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>text</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="my_paint.qrc">
+      <normaloff>:/new/prefix2/icons/instruments-icons/text.png</normaloff>:/new/prefix2/icons/instruments-icons/text.png</iconset>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>96</x>
+      <y>20</y>
+      <width>421</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="DrawingArea" name="tab">
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QSpinBox" name="penWidthSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="colorButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>545</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="action_Close"/>
+    <addaction name="separator"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menu_Instruments">
+    <property name="title">
+     <string>&amp;Instruments</string>
+    </property>
+    <addaction name="actionSelection"/>
+    <addaction name="actionEraser"/>
+    <addaction name="actionPen"/>
+    <addaction name="actionLine"/>
+    <addaction name="actionRectangle"/>
+    <addaction name="actionEllipse"/>
+    <addaction name="actionText"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_MyPaintEasy"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menuNew"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Instruments"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_New">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/document-new.png</normaloff>:/new/prefix1/icons/actions-icons/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/document-open.png</normaloff>:/new/prefix1/icons/actions-icons/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/document-save.png</normaloff>:/new/prefix1/icons/actions-icons/document-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/document-save-as.png</normaloff>:/new/prefix1/icons/actions-icons/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;As</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/window-close.png</normaloff>:/new/prefix1/icons/actions-icons/window-close.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix1/icons/actions-icons/application-exit.png</normaloff>:/new/prefix1/icons/actions-icons/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSelection">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/cursor.png</normaloff>:/new/prefix2/icons/instruments-icons/cursor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Selection</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/lastic.png</normaloff>:/new/prefix2/icons/instruments-icons/lastic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eraser</string>
+   </property>
+  </action>
+  <action name="actionColor_Picker">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/pipette.png</normaloff>:/new/prefix2/icons/instruments-icons/pipette.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color Picker</string>
+   </property>
+  </action>
+  <action name="actionMagnifier">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/loupe.png</normaloff>:/new/prefix2/icons/instruments-icons/loupe.png</iconset>
+   </property>
+   <property name="text">
+    <string>Magnifier</string>
+   </property>
+  </action>
+  <action name="actionPen">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/pencil.png</normaloff>:/new/prefix2/icons/instruments-icons/pencil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pen</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/line.png</normaloff>:/new/prefix2/icons/instruments-icons/line.png</iconset>
+   </property>
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionSpray">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/spray.png</normaloff>:/new/prefix2/icons/instruments-icons/spray.png</iconset>
+   </property>
+   <property name="text">
+    <string>Spray</string>
+   </property>
+  </action>
+  <action name="actionFill">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/fill.png</normaloff>:/new/prefix2/icons/instruments-icons/fill.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fill</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/rectangle.png</normaloff>:/new/prefix2/icons/instruments-icons/rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/ellipse.png</normaloff>:/new/prefix2/icons/instruments-icons/ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ellipse</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/curve.png</normaloff>:/new/prefix2/icons/instruments-icons/curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>Curve</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="icon">
+    <iconset resource="my_paint.qrc">
+     <normaloff>:/new/prefix2/icons/instruments-icons/text.png</normaloff>:/new/prefix2/icons/instruments-icons/text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionAbout_MyPaintEasy">
+   <property name="text">
+    <string>About &quot;SimplePaint&quot;</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DrawingArea</class>
+   <extends>QWidget</extends>
+   <header location="global">DrawingArea.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="my_paint.qrc"/>
+ </resources>
+ <connections/>
+</ui>
